@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_size"
+        android:background="@android:color/holo_blue_bright" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/tilUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin_text"
+                android:layout_marginEnd="@dimen/margin_text_lateral"
+                android:layout_marginStart="@dimen/margin_text_lateral"
+                android:padding="@dimen/deafult_padding"
+                android:hint="@string/text_user"
+                app:helperText="@string/text_required"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/tietUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textUri"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/tilPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tilUser"
+                android:layout_margin="@dimen/margin_text_lateral"
+                android:padding="@dimen/deafult_padding"
+                android:hint="@string/text_pass"
+                app:helperText="@string/text_required"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/tietPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/boton_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="?attr/actionBarSize"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        app:hideOnScroll="true"
+        app:fabAnimationMode="scale" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fabConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check"
+        app:layout_anchor="@id/boton_app_bar"
+        android:layout_marginBottom="@dimen/margin_button"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

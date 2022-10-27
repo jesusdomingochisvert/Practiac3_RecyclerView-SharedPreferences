@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practica3</string>
+    <string name="text_user">Nombre Usuario</string>
+    <string name="text_required">Requerido</string>
+    <string name="text_pass">Contraseña</string>
+    <string name="description_new_photo">Portada Noticia</string>
+    <string name="title_new">Titulo Noticia</string>
+    <string name="date_new">Fecha Noticia</string>
+    <string name="summary_new">Resumen Noticia</string>
+</resources>
