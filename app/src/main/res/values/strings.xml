@@ -7,4 +7,13 @@
     <string name="title_new">Titulo Noticia</string>
     <string name="date_new">Fecha Noticia</string>
     <string name="summary_new">Resumen Noticia</string>
+    <string name="new_title">Titulo Noticia</string>
+    <string name="mb_text">Save</string>
+    <string name="new_summary">Resumen Noticia</string>
+    <string name="new_date">Fecha Noticia</string>
+    <string name="new_urlImg">URL Imagen</string>
+    <string name="new_url">URL Noticia</string>
+    <string name="register">Registro</string>
+    <string name="remember">Recordar Usuario</string>
+    <string name="log_out">Log Out</string>
 </resources>

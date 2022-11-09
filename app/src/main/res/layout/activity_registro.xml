@@ -4,30 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.RegistroActivity">
 
     <ImageView
 
-        android:id="@+id/iv"
+        android:id="@+id/ivRegistro"
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_size"
         android:background="@android:color/holo_blue_bright" />
 
     <androidx.core.widget.NestedScrollView
 
-        android:id="@+id/nsv"
+        android:id="@+id/nsvRegistro"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
 
-            android:id="@+id/cl"
+            android:id="@+id/clRegistro"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputLayout
 
-                android:id="@+id/tilUser"
+                android:id="@+id/tilUserRegistro"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
 
-                    android:id="@+id/tietUser"
+                    android:id="@+id/tietUserRegistro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textUri"/>
@@ -52,12 +52,12 @@
 
             <com.google.android.material.textfield.TextInputLayout
 
-                android:id="@+id/tilPass"
+                android:id="@+id/tilPassRegistro"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tilUser"
+                app:layout_constraintTop_toBottomOf="@+id/tilUserRegistro"
                 android:layout_margin="@dimen/margin_text_lateral"
                 android:padding="@dimen/deafult_padding"
                 android:hint="@string/text_pass"
@@ -66,40 +66,19 @@
 
                 <com.google.android.material.textfield.TextInputEditText
 
-                    android:id="@+id/tietPass"
+                    android:id="@+id/tietPassRegistro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-
-                android:id="@+id/btnRegister"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/common_padding_default"
-                app:layout_constraintTop_toBottomOf="@+id/tilPass"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:text="@string/register"/>
-
-            <CheckBox
-
-                android:id="@+id/chbRemember"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/common_padding_default"
-                app:layout_constraintTop_toTopOf="@+id/btnRegister"
-                app:layout_constraintEnd_toStartOf="@+id/btnRegister"
-                android:text="@string/remember"/>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/boton_app_bar"
+        android:id="@+id/boton_app_barRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -110,11 +89,11 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
 
-        android:id="@+id/fabConfirm"
+        android:id="@+id/fabConfirmRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_check"
-        app:layout_anchor="@id/boton_app_bar"
+        app:layout_anchor="@id/boton_app_barRegistro"
         android:layout_marginBottom="@dimen/margin_button"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
